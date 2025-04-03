@@ -35,3 +35,21 @@ synchdata(2)
 synchdata(3)
 synchdata(4)
 synchdata(1)
+
+
+
+
+data(1,()=>{
+    console.log("getting data2....")
+    data(2,()=>{
+        console.log("getting data3....")
+
+        data(3,()=>{
+            console.log("getting data4....")
+
+            data(4);
+            console.log("end...")
+
+        });
+    });
+});
